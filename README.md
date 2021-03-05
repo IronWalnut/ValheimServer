@@ -1,10 +1,10 @@
 # Server Info
 **IP:** waltoncloud.ddns.net
 
-**Port:** 19132 (default)
+**Port:** 2456 (default)
 
 # Server Maintenance & Backups
-The server will reboot for maintenance and to back up the world files on Mondays, Wednesdays, and Fridays at 4am EST.
+The server will reboot for maintenance & backups on Mondays, Wednesdays, and Fridays at 4am EST.
 
 # Installation Notes
 The `valheim_dedicated.sh` script includes logic to save changes and push to this repo when started and is designed to be run on server reboot. Several server files are much to big for git and are not included in this repo. The full server software can be installed from [Steam](https://store.steampowered.com/app/892970/Valheim/).
@@ -22,5 +22,5 @@ sudo ./valheim_server.x86_64 -name "My server" -port 2456 -world "Dedicated" -pa
 
 ### Cronjob Example (running as sudo):
 ```
-@reboot cd "/home/<user>/.local/share/Steam/steamapps/common/Valheim dedicated server" && sudo ./valheim_dedicated.sh > server_console.log
+@reboot sh "/home/kwalton/.local/share/Steam/steamapps/common/Valheim dedicated server/valheim_dedicated.sh" > "/home/kwalton/.local/share/Steam/steamapps/common/Valheim dedicated server/server_console.log"
 ```
