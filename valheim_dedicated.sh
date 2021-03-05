@@ -16,6 +16,8 @@ echo "$PWD"
 VALHEIM_SERVER_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd "$VALHEIM_SERVER_DIR"
 
+echo "$PWD"
+
 
 ######## Wait for networking stuff to come online ########
 echo "Waiting 120 seconds..."
