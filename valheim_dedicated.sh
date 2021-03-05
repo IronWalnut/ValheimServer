@@ -34,6 +34,6 @@ sudo git push origin master -v
 # NOTE: Minimum password length is 5 characters & Password cant be in the server name.
 # NOTE: You need to make sure the ports 2456-2458 is being forwarded to your server through your local router & firewall.
 echo "Starting Server..."
-cd "$VALHEIM_SERVER_DIR" && sudo ./valheim_server.x86_64 -name "WaltonNet" -port 2456 -world "Baconator" -password "keviniscool"
+cd "$VALHEIM_SERVER_DIR" && sudo ./valheim_server.x86_64 -name "WaltonNet" -port 2456 -world "Baconator" -password "keviniscool" > "$VALHEIM_SERVER_DIR./server_console.log"
 
 export LD_LIBRARY_PATH=$templdpath
