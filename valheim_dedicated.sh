@@ -10,15 +10,13 @@ export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
 export SteamAppId=892970
 export TERM=xterm
 
-
 ######## Change Directory to Valheim Server Dir ########
 VALHEIM_SERVER_DIR="/home/kwalton/.local/share/Steam/steamapps/common/Valheim dedicated server"
 cd "$VALHEIM_SERVER_DIR"
 
-
-######## Wait for networking stuff to come online ########
-echo "Waiting 120 seconds for networking..."
-sleep 120
+######## .gitignore files over 50MB ########
+find . -size +50M -not -path "./.git/*" | sed 's/\.\///g' > .gitignore
+echo "server_console.log" >> .gitignore
 
 ######## Run Server GitHub Backup ########
 # Create commit on all files with timestamp as message
