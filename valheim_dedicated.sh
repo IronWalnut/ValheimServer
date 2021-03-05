@@ -40,7 +40,7 @@ sudo git push origin master -v
 echo "$PWD"
 echo "Starting Server..."
 echo "$PWD"
-cd "$VALHEIM_SERVER_DIR" && sudo ./valheim_server.x86_64 -name "WaltonNet" -port 2456 -world "Baconator" -password "keviniscool"
+#cd "$VALHEIM_SERVER_DIR" && sudo ./valheim_server.x86_64 -name "WaltonNet" -port 2456 -world "Baconator" -password "keviniscool"
 
 export LD_LIBRARY_PATH=$templdpath
 
