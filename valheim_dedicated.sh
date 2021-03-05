@@ -10,6 +10,8 @@ export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
 export SteamAppId=892970
 export TERM=xterm
 
+echo "$PWD"
+
 ######## Change Directory to Valheim Server Dir ########
 VALHEIM_SERVER_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd "$VALHEIM_SERVER_DIR"
@@ -33,7 +35,10 @@ sudo git push origin master -v
 # Tip: Make a local copy of this script to avoid it being overwritten by steam.
 # NOTE: Minimum password length is 5 characters & Password cant be in the server name.
 # NOTE: You need to make sure the ports 2456-2458 is being forwarded to your server through your local router & firewall.
+echo "$PWD"
 echo "Starting Server..."
+echo "$PWD"
 cd "$VALHEIM_SERVER_DIR" && sudo ./valheim_server.x86_64 -name "WaltonNet" -port 2456 -world "Baconator" -password "keviniscool"
 
 export LD_LIBRARY_PATH=$templdpath
+
