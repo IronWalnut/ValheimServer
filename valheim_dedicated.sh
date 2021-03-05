@@ -9,12 +9,10 @@ export templdpath=$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
 export SteamAppId=892970
 
-
+######## Change Directory to Valheim Server Dir ########
 VALHEIM_SERVER_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd "$VALHEIM_SERVER_DIR"
 
-####### Add Large Files to .gitignore #######
-find . -size +20M -not -path "./.git/*" > .gitignore
 
 ######## Wait for networking stuff to come online ########
 echo "Waiting 120 seconds..."
