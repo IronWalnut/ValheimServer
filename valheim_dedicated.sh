@@ -8,6 +8,7 @@
 export templdpath=$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
 export SteamAppId=892970
+export TERM=xterm
 
 ######## Change Directory to Valheim Server Dir ########
 VALHEIM_SERVER_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
