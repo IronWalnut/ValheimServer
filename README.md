@@ -3,6 +3,8 @@
 
 **Port:** 2456 (default)
 
+**World Seed:** C4CXDfJBQy
+
 # Server Maintenance & Backups
 The server will reboot for maintenance & backups on Mondays, Wednesdays, and Fridays at 4am EST.
 
